@@ -38,14 +38,14 @@ The canonical sheet is ChatGPT Pets v2:
 - Standard rows: `idle`, `running-right`, `running-left`, `waving`, `jumping`, `failed`, `waiting`, `running`, and `review`
 - Final two rows: 16 clockwise look directions from `000` through `337.5` degrees
 
-The `running` row uses approved truck poses so the runtime can hold the truck appearance while a task is processing. The duration is controlled by the host task state; the sprite sheet does not encode a random 30–120 second timer.
+The `running` row repeats one complete front-truck pose in all six cells. This corresponds to the attached reference's truck labels 1, 3, and 5, so the processing state holds a stable truck appearance instead of alternating between views. The duration is controlled by the host task state; the sprite sheet does not encode a random 30–120 second timer.
 
 ## Validation
 
 The checked release asset passed the structural Pets v2 preflight and the local image-quality gate. The final PNG is RGBA, 1536 × 2288, and has SHA-256:
 
 ```text
-d78bd72ee84e5fc642459f8d8cdb08468e6baa6a8ebac75c799f03d72b1b7b84
+eda329940ef9f85830c1a0f57ae15ac1599522f5b95a4e3f3248c58ad5b087a3
 ```
 
 The archived QA report retains three non-blocking look-direction continuity warnings; no structural validation errors were present.
@@ -57,4 +57,3 @@ Use `assets/optimus-prime-pet-v2.png` as the upload source for a compatible Chat
 ## License and attribution
 
 The repository contents are released under the MIT License. See [LICENSE](LICENSE) for the full text. The artwork is an original fan-made robot sprite and carries no official affiliation.
-

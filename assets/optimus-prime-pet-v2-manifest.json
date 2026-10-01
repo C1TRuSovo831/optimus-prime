@@ -29,6 +29,8 @@
       "rowIndex": 7,
       "frames": 6,
       "processingAppearance": "truck",
+      "processingFrameMode": "repeat-single-pose",
+      "processingPoseReference": "attached truck labels 1, 3, and 5",
       "completionAppearance": "robot"
     },
     "review": {"rowIndex": 8, "frames": 6}
@@ -52,4 +54,3 @@
     {"degrees": 337.5, "rowIndex": 10, "columnIndex": 7}
   ]
 }
-
