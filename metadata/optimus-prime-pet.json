@@ -1,0 +1,39 @@
+{
+  "project_name": "optimus-prime-transforming-pet",
+  "display_name": "擎天柱",
+  "description": "A slender red-and-blue transforming robot pet for ChatGPT Work, with truck-mode processing and multi-action animation.",
+  "description_zh": "一个体态修长的红蓝变形机器人桌宠；启动处理任务后进入卡车状态，处理结束后回到机器人，并保留多种动作和 16 方位视线。",
+  "license": "MIT",
+  "sprite_sheet": {
+    "version": 2,
+    "file": "assets/optimus-prime-pet-v2.png",
+    "webp_file": "assets/optimus-prime-pet-v2.webp",
+    "width": 1536,
+    "height": 2288,
+    "columns": 8,
+    "rows": 11,
+    "cell_width": 192,
+    "cell_height": 208,
+    "sha256": "d78bd72ee84e5fc642459f8d8cdb08468e6baa6a8ebac75c799f03d72b1b7b84"
+  },
+  "runtime_behavior": {
+    "processing_state": "running",
+    "processing_appearance": "truck",
+    "completion_state": "idle",
+    "completion_appearance": "robot",
+    "duration_source": "host task state"
+  },
+  "standard_states": {
+    "idle": 6,
+    "running-right": 8,
+    "running-left": 8,
+    "waving": 4,
+    "jumping": 5,
+    "failed": 8,
+    "waiting": 6,
+    "running": 6,
+    "review": 6
+  },
+  "look_direction_count": 16
+}
+
